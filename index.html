@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESSENCE - Moda Minimalista</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #2c2c2c;
+            line-height: 1.6;
+        }
+
+        /* Banner */
+        .banner {
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 3.5rem;
+            font-weight: 300;
+            letter-spacing: 8px;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .banner p {
+            font-size: 1.1rem;
+            color: #666;
+            letter-spacing: 2px;
+            font-weight: 300;
+        }
+
+        /* Sección Principal */
+        .main-section {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 20px;
+        }
+
+        .collection-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .collection-item {
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .collection-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .collection-image {
+            width: 100%;
+            height: 400px;
+            background: #f0f0f0;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #ccc;
+        }
+
+        .collection-item h3 {
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .collection-item p {
+            color: #888;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 50px;
+            padding: 15px 50px;
+            background: #1a1a1a;
+            color: white;
+            text-decoration: none;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #333;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 50px 20px 30px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h4 {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            font-weight: 400;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            font-size: 0.85rem;
+            color: #888;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .banner h1 {
+                font-size: 2.5rem;
+                letter-spacing: 4px;
+            }
+
+            .collection-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner -->
+    <header class="banner">
+        <h1>ESSENCE</h1>
+        <p>COLECCIÓN PRIMAVERA 2025</p>
+    </header>
+
+    <!-- Sección Principal -->
+    <main class="main-section">
+        <div class="collection-grid">
+            <div class="collection-item">
+                <div class="collection-image">👗</div>
+                <h3>ELEGANCIA</h3>
+                <p>Diseños sofisticados para cada ocasión</p>
+            </div>
+            <div class="collection-item">
+                <div class="collection-image">👔</div>
+                <h3>CASUAL</h3>
+                <p>Comodidad y estilo para el día a día</p>
+            </div>
+            <div class="collection-item">
+                <div class="collection-image">👠</div>
+                <h3>ACCESORIOS</h3>
+                <p>El toque perfecto para completar tu look</p>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <a href="#" class="cta-button">EXPLORAR COLECCIÓN</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>COMPRAR</h4>
+                <ul>
+                    <li><a href="#">Mujer</a></li>
+                    <li><a href="#">Hombre</a></li>
+                    <li><a href="#">Accesorios</a></li>
+                    <li><a href="#">Nueva Colección</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>AYUDA</h4>
+                <ul>
+                    <li><a href="#">Guía de Tallas</a></li>
+                    <li><a href="#">Envíos</a></li>
+                    <li><a href="#">Devoluciones</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>SÍGUENOS</h4>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ESSENCE. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
